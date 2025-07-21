@@ -17,7 +17,6 @@ export const server = {
                 res: null
             }
         }
-
         return {
             error: null,
             res: createSession(user.role_id)
