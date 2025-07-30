@@ -1,14 +1,13 @@
-import styled from 'styled-components'
-import {Header} from './components'
+import styled from 'styled-components';
+import { Header, Footer } from './components';
 import { Routes, Route } from 'react-router-dom';
 
 const Content = styled.div`
   padding: 120px 0;
-
-`
+`;
 const H2 = styled.h2`
   text-align: center;
-`
+`;
 const AppColumn = styled.div`
   display: flex;
   flex-direction: column;
@@ -18,14 +17,12 @@ const AppColumn = styled.div`
   background-color: #fff;
   margin: 0 auto;
   position: relative;
-`
+`;
 
-const Footer = ()=> <div>Подвал</div>
-
-function Blog() {   
+function Blog() {
   return (
     <AppColumn>
-    <Header/>
+      <Header />
       <Content>
         <H2>Контент страницы</H2>
         <Routes>
@@ -38,9 +35,9 @@ function Blog() {
           <Route path="*" element={<div>Ошибка</div>} />
         </Routes>
       </Content>
-      <Footer/>
+      <Footer />
     </AppColumn>
-  )
+  );
 }
 
-export default Blog
+export default Blog;

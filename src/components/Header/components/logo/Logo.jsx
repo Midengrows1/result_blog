@@ -13,7 +13,7 @@ const SmallText = styled.p`
     font-weight: normal;
 `
 const LogoContainer = ({ className }) => (
-    <Link className={className} to={"/login"}>
+    <Link className={className} to={"/"}>
         <FontAwesomeIcon icon={faCode} size='4x' />
         <div>
             <LargeText>Блог</LargeText>
@@ -29,7 +29,4 @@ export const Logo = styled(LogoContainer)`
     text-decoration: none;
     color: #000;
 `
-Logo.defaultProps = {
-    className: 'logo'
-}
 
