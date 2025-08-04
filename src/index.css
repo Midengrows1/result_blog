@@ -47,20 +47,22 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 } */
- * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- }
+}
 body {
   background-color: #405060;
 }
-a, button {
+a,
+button {
   cursor: pointer;
   text-decoration: none;
+  color: #000;
 }
-html, 
-body, 
+html,
+body,
 #root {
   height: 100%;
 }

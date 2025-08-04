@@ -1,20 +1,22 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 import { ControlPanel, Logo } from './components';
 
 const Description = styled.div`
   font-style: italic;
-`
-const HeaderContainer = ({ className })=> (
-<header className={className}>
-  <Logo />
-  <Description>
-    Веб-технологии<br/>
-    Написание кода<br/>
-    Разбор ошибок
-  </Description>
-  <ControlPanel/>
-</header>
-)
+`;
+const HeaderContainer = ({ className }) => (
+  <header className={className}>
+    <Logo />
+    <Description>
+      Веб-технологии
+      <br />
+      Написание кода
+      <br />
+      Разбор ошибок
+    </Description>
+    <ControlPanel />
+  </header>
+);
 export const Header = styled(HeaderContainer)`
   position: fixed;
   width: 1000px;
@@ -28,7 +30,7 @@ export const Header = styled(HeaderContainer)`
   align-items: center;
   justify-content: space-between;
   font-family: 'Montserrat', sans-serif;
-`
+`;
 Header.defaultProps = {
-  className: 'header'
+  className: 'header',
 };
