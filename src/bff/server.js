@@ -7,6 +7,7 @@ export const server = {
     },
     async authorize(authLogin, authPassword) {
         const user = await getUser(authLogin);
+        console.log(user);
         if (!user) {
             return {
                 error: "Такой пользователь не найден",
@@ -33,16 +34,14 @@ export const server = {
         }
     },
     async register(regLogin, regPassword) {
-        const user = await getUser(regLogin);
-        if (user) {
+        const existeduser = await getUser(regLogin);
+        if (existeduser) {
             return {
                 error: "Такой логин уже занят",
                 res: null
             }
         }
-        await addUser(regLogin, regPassword)
-
-
+        const user = await addUser(regLogin, regPassword);
         return {
             error: null,
             res: {
