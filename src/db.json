@@ -8,32 +8,11 @@
       "role_id": "0"
     },
     {
-      "login": "Ivan",
+      "login": "Galina",
       "password": "qwerty123",
-      "registed_at": "+080438-08-13 23",
-      "role_id": 2,
-      "id": "i1Dm0tP"
-    },
-    {
-      "login": "Ivan2",
-      "password": "qwerty123",
-      "registed_at": "+069620-04-14 03",
-      "role_id": 2,
-      "id": "Jolcybw"
-    },
-    {
-      "login": "anton23",
-      "password": "qwerty123",
-      "registed_at": "+079091-07-07 06",
-      "role_id": 2,
-      "id": "t9tZoAZ"
-    },
-    {
-      "login": "Amir",
-      "password": "Gorgist#777",
-      "registed_at": "+067652-04-03 12",
-      "role_id": 2,
-      "id": "xV68Rvr"
+      "registed_at": "2016-11-13 06:29",
+      "role_id": "1",
+      "id": "blRC4u7"
     }
   ],
   "roles": [

@@ -2,7 +2,7 @@ import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { server } from '../bff';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Input, Button, AuthFormError } from '../components';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
@@ -63,10 +63,11 @@ const AuthorizationContainer = ({ className }) => {
 
   const formError = errors?.login?.message || errors?.password?.message || serverError;
   const errorMessage = formError || serverError;
-
-  if (roleId !== ROLE.GUEST) {
-    navigate('/');
-  }
+  useEffect(() => {
+    if (roleId !== ROLE.GUEST) {
+      navigate('/');
+    }
+  }, [roleId, navigate]);
 
   return (
     <div className={className}>
